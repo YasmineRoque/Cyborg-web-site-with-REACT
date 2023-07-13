@@ -2,7 +2,8 @@ import './App.css'
 // import Header from './components/Header/Header';
 // import Container from './components/Container/Container';
 // import Footer from './components/Footer/Footer';
-import {Header, Container,  Hero, Footer} from './components/index'
+import { Container } from './components/index'
+import { Header, Hero, Footer} from './sections/index';
 
 const App = () => {
     return (
