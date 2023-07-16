@@ -5,10 +5,6 @@
     margin-top: var(--margin-primary);
 }
 
-.section-header h4 {
-    font-size: 36px;
-    font-weight: var(--font-weight-bold);
-}
 
 .most-popular-items {
     display: flex;
