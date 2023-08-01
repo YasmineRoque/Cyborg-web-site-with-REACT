@@ -1,3 +1,4 @@
+import { PrimaryButton } from '../../components/index'
 import './Hero.css'
 
 const Hero = () => {
@@ -7,9 +8,9 @@ const Hero = () => {
             <h6 className='hero-subtitle'>Welcome To Cybrog</h6>
             <h4 className='hero-title'><em>Browse</em> Our Popular Games Here</h4>
 
-            <div className='main-button'>
-                <a href='browse.html'>Browse Now</a>
-            </div>
+            <PrimaryButton>Browse Now</PrimaryButton>
+                
+            
 
         </div>
       

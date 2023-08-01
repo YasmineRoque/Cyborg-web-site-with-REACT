@@ -1,19 +1,23 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
-// import Header from './components/Header/Header';
-// import Container from './components/Container/Container';
-// import Footer from './components/Footer/Footer';
 import { Container } from './components/index'
-import { Header, Hero, MostPopular, Footer} from './sections/index';
+import { Header, Footer} from './sections/index';
+import {Home, Profile} from './Pages/index';
 
 const App = () => {
     return (
         <>
-            <Header />
-            <Container> 
-                <Hero />
-                <MostPopular />
-            </Container>
-            <Footer />
+            <Router>
+                <Header />
+                <Container> 
+                    <Routes>  
+                        <Route path='/' element={<Home />} />
+                        <Route path='/profile' element={<Profile />} />
+                    </Routes>
+                </Container>
+                <Footer />
+            </Router>
+            
         </>
         
     )
